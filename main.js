@@ -192,13 +192,13 @@ var isValidChain = (blockchainToValidate) => {
     return true;
 };
 /////////////////////Code for verification/////////////////
-var doWork = () => {
-  blockchain.forEach( (k, v) => verifyIntegrity(k) );
-}
-
-var verifyIntegrity = (block, prev = null) => {
-  
-}
+// var doWork = () => {
+//   blockchain.forEach( (k, v) => verifyIntegrity(k) );
+// }
+//
+// var verifyIntegrity = (block, prev = null) => {
+//
+// }
 //////////////////////////////////////////////////////////
 var getLatestBlock = () => blockchain[blockchain.length - 1];
 var queryChainLengthMsg = () => ({'type': MessageType.QUERY_LATEST});
