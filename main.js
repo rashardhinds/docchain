@@ -152,7 +152,7 @@ var handleBlockchainResponse = (message) => {
         //console.log('blockchain possibly behind. We got: ' + latestBlockHeld.index + ' Peer got: ' + latestBlockReceived.index);
         if (latestBlockHeld.hash === latestBlockReceived.previousHash) {
             //console.log("We can append the received block to our chain");
-            doWork();
+            //doWork();
             blockchain.push(latestBlockReceived);
             broadcast(responseLatestMsg());
         } else if (receivedBlocks.length === 1) {
